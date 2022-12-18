@@ -25,7 +25,7 @@
 						<li><a href="#five">CERTIFICATE</a></li>
 						<li><a href="#six">PROJECTS</a></li>
 						<!-- <li><a href="#seven">BLOG</a></li> -->
-						<li><a href="#eight">CONTACT</a></li>
+						<li><a href="#seven">CONTACT</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -63,8 +63,8 @@
 										</p>
 										<div class="col-3 col-6-medium col-12-xsmall">
 											<ul class="actions small">
-												<li><a href="resume/resume-en.pdf" class="button primary fit" target="_blank">English Resume</a></li>
-												<li><a href="#" class="button primary fit" target="_blank">Persian Resume</a></li>
+												<li><a href="resume/resume-en.pdf" class="button primary fit">English Resume</a></li>
+												<!-- <li><a href="#" class="button primary fit">Persian Resume</a></li> -->
 											</ul>
 										</div>
 									</header>
@@ -453,8 +453,8 @@
 							</div>
 						</section> -->
 
-						<!-- Eight -->
-							<section id="eight">
+						<!-- Seven -->
+							<section id="seven">
 								<div class="container">
 									<h3>CONTACT</h3>
 									<!-- <p align="center">Phone No. +98-9120929838</p> -->
@@ -478,11 +478,20 @@
 													<input type="email" name="email" id="demo-email" value="" placeholder="Email" required/>
 												</div>
 												<div class="col-12">
+													<select name="Category" id="demo-category" required>
+														<option value="">- Category -</option>
+														<option value="Question">Question</option>
+														<option value="Job Offer">Job Offer</option>
+														<option value="Other">Other</option>
+													</select>
+												</div>
+												<div class="col-12">
 													<textarea name="message" id="demo-message" placeholder="Enter your message" rows="6" required></textarea>
 												</div>
 												<div class="col-12">
 													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
+														<li><input class="button primary" type="submit" value="Send Message" /></li>
+														<li><input class="button" type="reset" value="Reset" class="alt" /></li>
 													</ul>
 												</div>
 											</div>
