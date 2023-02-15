@@ -3363,10 +3363,105 @@ input, select, textarea {
 }
 
 
+/* Timeline */
+.timeline {
+	width: 100%;
+	max-width: 800px;
+	background: #fff;
+	padding: 50px 50px;
+	position: relative;
+	/* box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2); */
+  }
+  .timeline:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 40%;
+	bottom: 80px;
+	width: 6px;
+	background: #ddd;
+  }
+  .timeline:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  .entry {
+	clear: both;
+	text-align: left;
+	position: relative;
+  }
+  .entry .title {
+	margin-bottom: .5em;
+	float: left;
+	width: 40%;
+	padding-right: 30px;
+	text-align: right;
+	position: relative;
+  }
+  .entry .title:before {
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border: 4px solid #4acaa8;
+	background-color: #fff;
+	border-radius: 100%;
+	top: 5%;
+	right: 0px;
+	z-index: 99;
+  }
+  .entry .title h3 {
+	margin: 2;
+	font-size: 120%;
+  }
+
+  .entry .title h4 {
+	margin: 2;
+	font-size: 90%;
+  }
+  
+  .entry .title p {
+	margin: 0;
+	font-size: 100%;
+  }
+  .entry .body {
+	margin: 0 0 3em;
+	float: right;
+	width: 60%;
+	padding-left: 30px;
+  }
+  .entry .body h3 {
+	margin: 2;
+	font-size: 120%;
+  }
+  .entry .body p {
+	line-height: 1.4em;
+  }
+  .entry .body p:first-child {
+	margin-top: 0;
+	font-weight: 400;
+  }
+  .entry .body ul {
+	color: #aaa;
+	padding-left: 0;
+	list-style-type: none;
+  }
+  .entry .body ul li:before {
+	content: "–";
+	margin-right: .5em;
+  }
+  
+
+
+
+
+
 
 
 /* Education section */
-
+/* 
   // {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -3392,7 +3487,7 @@ input, select, textarea {
  }
  
  .timeline-container {
-	width: 80%;
+	width: 100%;
 	padding: 50px 0;
 	margin: 50px auto;
 	position: relative;
@@ -3402,7 +3497,7 @@ input, select, textarea {
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 50%;
+	left: 15%;
 	margin-left: -1px;
 	width: 2px;
 	height: 100%;
@@ -3410,9 +3505,9 @@ input, select, textarea {
 	z-index: 1
  }
  .timeline-block {
-	width: -webkit-calc(50% + 8px);
-	width: -moz-calc(50% + 8px);
-	width: calc(50% + 8px);
+	width: -webkit-calc(85% + 8px);
+	width: -moz-calc(85% + 8px);
+	width: calc(85% + 8px);
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
@@ -3476,30 +3571,8 @@ input, select, textarea {
 	   float: none;
 	   direction: ltr;
 	}
- }
- 
-/* button */
+ } */
 
- .buttons {
-	border: none;
-	color: white;
-	padding: 12px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	transition-duration: 0.4s;
-	cursor: pointer;
-  }
-  
-  .button1 {
-	background-color: #4acaa8; 
-	color: white; 
-	border: 2px solid #4acaa8;
-  }
-  
-  .button1:hover {
-	background-color: white;
-	color: #4acaa8;
-  }
+
+
+
